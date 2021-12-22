@@ -1,0 +1,77 @@
+.Navbar {
+  height: 94px;
+  align-items: center;
+  margin: 0px;
+  justify-content: flex-end;
+}
+
+.Logo {
+  width: 102px;
+  height: 30px;
+}
+
+.Item {
+  border-left: 2px solid #f5f6f9;
+  display: inline-block;
+  margin: auto;
+  padding: 32px 34px;
+  font-size: 22px;
+}
+.Item:hover {
+  cursor: pointer;
+}
+.Name {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+.Avatar {
+  border-radius: 50%;
+  height: 27px;
+  width: 27px;
+}
+.AvatarContainer {
+  position: relative;
+}
+.AvatarContainer::after {
+  content: '';
+  bottom: -38%;
+  left: 75%;
+  height: 12px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 30%);
+  border-radius: 50%;
+  position: absolute;
+  width: 12px;
+  background-color: #38b653;
+}
+@media (max-width: 1000px) {
+  .DesktopOnly {
+    display: none;
+  }
+  .AvatarContainer::after {
+    bottom: -23%;
+    left: 63%;
+  }
+}
+.Hamburger {
+  display: none;
+  padding-left: 16px;
+}
+.Hamburger:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .Navbar {
+    height: 56px;
+    justify-content: space-between;
+  }
+  .Item {
+    border: none;
+    padding: 12px 12px;
+  }
+  .Hamburger {
+    display: inline-block;
+  }
+}

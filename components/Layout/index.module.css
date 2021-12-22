@@ -1,0 +1,25 @@
+.Content {
+  min-height: calc(100vh - 94px);
+  background-color: #f5f6f9;
+}
+
+@media (max-width: 1000px) {
+  .Content {
+    min-height: calc(100vh - 56px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .Col1 {
+    width: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .Col1 {
+    width: 250px;
+  }
+}
+
+.Hide {
+  display: none;
+}

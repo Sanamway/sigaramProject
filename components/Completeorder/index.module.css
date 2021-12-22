@@ -1,0 +1,122 @@
+.LoginRegister {
+    background: #f5f6f9;
+    /* height: calc(100vh - 66px); */
+    min-height: calc(100vh - 66px);
+    padding: 60px 0px;
+    width: 100%;
+  }
+  
+  .Container {
+    position: relative;
+    margin: auto;
+    width: 664px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.301082);
+    border-radius: 4px;
+    padding: 58px 22px;
+    padding-bottom: 31px;
+  }
+  
+  @media (max-width: 1000px) {
+    .LoginRegister {
+      padding: 0px;
+    }
+    .Container {
+      width: 100%;
+      box-shadow: none;
+      border-radius: 0px;
+      height: calc(100vh - 66px);
+    }
+  }
+  
+  .Heading {
+    color: #2d4c66;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  
+  .SubHeading {
+    font-size: 14px;
+    color: #6f87a0;
+    margin-bottom: 25px;
+  }
+  
+  /* Input Field */
+  .InputField {
+    margin-bottom: 25px;
+  }
+  .InputTitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2d4c66;
+    margin-bottom: 4px;
+  }
+  .InputBox {
+    background: #f5f6f9;
+    border: 1px solid #baccdd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 100%;
+    font-size: 14px;
+    color: #2d4c66;
+    outline: none;
+  }
+  .InputBox::placeholder {
+    color: #baccdd;
+  }
+  
+  .ForgotPassword {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffb300;
+    margin-bottom: 31px;
+  }
+  .ForgotPassword:hover {
+    cursor: pointer;
+  }
+  .SubmitButton {
+    background: #26c6da;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 20px;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+  }
+  .SubmitButton:hover,
+  .SubmitButton:focus {
+    background-color: #2d4c66;
+  }
+  
+  /* Eye */
+  .Eye {
+    position: relative;
+    top: -32px;
+    left: calc(100% - 26px);
+  }
+  .Eye:hover {
+    cursor: pointer;
+  }
+  
+  .buttonShowHide {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-top: 22px;
+    margin-bottom: 29px;
+    /* identical to box height, or 150% */
+  
+    letter-spacing: 0.15px;
+  
+    /* Cyan / 400 */
+  
+    color: #26c6da;
+  }

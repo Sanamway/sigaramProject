@@ -1,0 +1,11 @@
+.Toastify__toast {
+  color: white !important;
+  background-color: #2d4c66 !important ;
+  box-shadow: 0px 24px 24px -6px rgba(0, 0, 0, 0.52),
+    0px 0px 1px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 4px;
+}
+
+.Toastify__toast-icon {
+  display: none !important;
+}

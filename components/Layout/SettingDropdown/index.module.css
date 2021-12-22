@@ -1,0 +1,36 @@
+.SettingDropdown {
+  position: absolute;
+  z-index: 200;
+  right: 0px;
+  width: 288px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1), 0px 25px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  color: #2d4c66;
+  padding: 0px;
+}
+
+.Item {
+  padding: 10px 19px;
+}
+.Item:hover {
+  cursor: pointer;
+  background-color: #e0f7fa;
+}
+.Icon {
+  font-size: 20px;
+  padding: 0px;
+}
+.Text {
+  padding-left: 18px;
+}
+.TextUpper {
+  font-size: 14px;
+  font-weight: 500;
+}
+.TextLower {
+  color: #6f87a0;
+  font-size: 12px;
+  font-weight: 400;
+}

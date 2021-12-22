@@ -1,0 +1,964 @@
+.Container {
+    padding-left: 50px;
+    padding-right: 55px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .headingMain {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height */
+  
+    letter-spacing: 0.25px;
+  
+    /* Cyan/Dark Blue/900 */
+  
+    color: #001626;
+  }
+  .paraMain {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+  
+    text-align: justify;
+    letter-spacing: 0.15px;
+  
+    /* Cyan/Dark Blue/300 */
+  
+    color: #6f87a0;
+  }
+  .buttonAdd {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-top: 22px;
+    margin-bottom: 29px;
+    /* identical to box height, or 150% */
+  
+    letter-spacing: 0.15px;
+  
+    /* Cyan / 400 */
+  
+    color: #26c6da;
+  }
+  .projectTypeTab {
+    margin-bottom: 24px;
+  }
+  .projectTypeTabActive {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.25px;
+    padding: 5px;
+    border-bottom: 2px solid #26c6da;
+    color: #26c6da;
+    cursor: pointer;
+  }
+  .projectTypeTabInactive {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #001626;
+    cursor: pointer;
+  }
+  .searchInput {
+    background: #ffffff;
+    /* Cyan/Dark Blue/100 */
+    border: 1px solid #baccdd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px;
+    width: 360px;
+    height: 32px;
+    outline: none;
+    padding-left: 44px;
+  }
+  .searchInput::placeholder {
+    color: #baccdd;
+  }
+  .searchInputIcon {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+  }
+  .filterSortDiv {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .filterByDiv {
+    align-items: center;
+    padding: 9px 8px 9px 12px;
+    background: #2d4c66;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    width: 102px;
+    height: 32px;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0px 10px;
+    position: relative;
+  }
+  .filterByDiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 35px;
+    right: 0px;
+    width: 304px;
+    font-weight: bold;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .filterByDiv li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .filterByDiv li {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    letter-spacing: 0.444444px;
+    color: #6f87a0;
+  }
+  .filterByDivLi {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    letter-spacing: 0.444444px;
+    color: #6f87a0;
+    background: #e0f7fa;
+    border-radius: 4px;
+    color: #2d4c66 !important;
+  }
+  
+  .filterByDiv li:last-child {
+    border-bottom: none;
+    padding: 5px 6px 15px 14px;
+  }
+  
+  .filterByDiv li:hover {
+    background: #e0f7fa;
+    border-radius: 4px;
+    color: #2d4c66;
+  }
+  .sortByDiv {
+    width: 102px;
+    height: 32px;
+    align-items: center;
+    padding: 9px 8px 9px 12px;
+    background: #ffffff;
+    border: 1px solid #2d4c66;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    color: #2d4c66;
+    margin: 0px 10px;
+    margin-right: 0;
+    position: relative;
+  }
+  .sortByDiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 35px;
+    right: 0px;
+    width: 304px;
+    font-weight: bold;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .sortByDiv li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .sortByDiv li {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    letter-spacing: 0.444444px;
+    color: #6f87a0;
+  }
+  .sortByDivLi {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    letter-spacing: 0.444444px;
+    background: #e0f7fa;
+    border-radius: 4px;
+    color: #2d4c66 !important;
+  }
+  
+  .sortByDiv li:last-child {
+    border-bottom: none;
+    padding: 5px 6px 15px 14px;
+  }
+  
+  .sortByDiv li:hover {
+    background: #e0f7fa;
+    border-radius: 4px;
+    color: #2d4c66;
+  }
+  
+  .sortButtonCaret {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
+  .sortButtonCaretSm {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    display: none;
+  }
+  
+  .tableButton {
+    padding: 0;
+    margin-left: 12px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  .myTable {
+    margin-top: 35px;
+    width: 100%;
+  }
+  .myTable thead {
+    background: #001626;
+    border-radius: 4px 4px 0px 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 23px;
+    /* identical to box height */
+  
+    letter-spacing: 0.5px;
+  
+    color: #f5f9fa;
+  }
+  .theadTh {
+    padding: 23px;
+    text-transform: uppercase;
+  }
+  .theadTh1 {
+    padding: 23px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .tbodyTr {
+    border: 1px solid #daeced;
+  }
+  .tbodyTd1 {
+    /* padding: 30px 39px; */
+    margin: 12px 0;
+    border-right: 1px solid #daeced;
+    text-align: center;
+    padding: 28px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    /* identical to box height */
+  
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  .tbodyTd2 {
+    /* padding: 30px 39px; */
+    margin: 12px 0;
+    border-right: 1px solid #daeced;
+    /* text-align: center; */
+    padding: 28px;
+    padding-left: 23px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+  
+    letter-spacing: 0.15px;
+  
+    /* Cyan/Dark Blue/900 */
+  
+    color: #001626;
+  }
+  .tableMultiselectValues {
+    background: #e0f7fa;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: justify;
+    color: #2d4c66;
+    margin-right: 6px;
+    padding: 0px 8px;
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 24px;
+  }
+  .myTable tbody {
+    background: #ffffff;
+    border: 1px solid #daeced;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 12.24px;
+  }
+  
+  .tableMobDiv {
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2214);
+    border-radius: 4px;
+    padding: 17px 13px;
+    margin-bottom: 12px;
+  }
+  .tableMobDivFlex {
+    display: flex;
+    padding-bottom: 23px;
+  }
+  .tableMobDivFlex1 {
+    flex-grow: 4;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+  
+    letter-spacing: 0.15px;
+  
+    /* Cyan/Dark Blue/900 */
+  
+    color: #001626;
+  }
+  .tableMobDivDown {
+    border-top: 1px solid #d6d6d6;
+    padding-top: 19px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    /* identical to box height */
+  
+    letter-spacing: 0.5px;
+  
+    color: #001626;
+  }
+  .tableMobDivDownInfo {
+    margin-top: 10px;
+    margin-bottom: 19px;
+  }
+  
+  /* --- dropdown ---*/
+  .dropdownTask {
+    position: relative;
+    display: inline-block;
+    margin-left: 1px;
+  }
+  .dropdownTask ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 35px;
+    right: 0px;
+    width: 90px;
+    background-color: white;
+    font-weight: bold;
+    position: absolute;
+  
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdownTask li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .dropdownTask li {
+    padding: 15px 6px 5px 14px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #323232;
+  }
+  
+  .dropdownTask li:last-child {
+    border-bottom: none;
+    padding: 5px 6px 15px 14px;
+  }
+  
+  .dropdownTask li:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .dropdownTask .button {
+    width: 0px;
+    height: 0px;
+    background-color: #ff3232;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+    right: 14px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .dropdownTask .button:before {
+    content: url('/images/Arrow.svg');
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-color: white transparent transparent transparent;
+    right: 14px;
+    top: 10px;
+  }
+  
+  /*-----checkbox slider -----*/
+  /*Switch*/
+  .general-heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #0c0d0d;
+  }
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px; /*52 x 12*/
+    height: 12px;
+    transform: translateY(-3px);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d7d7d8;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 28px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 0px;
+    bottom: -2px;
+    background-color: #a5a5a6;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #8adae1;
+  }
+  input:checked + .slider:before {
+    background-color: #2dbdc9;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #8adae1;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 28px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /*--- Modals ----*/
+  .modalBodyDesktop {
+    padding: 25px;
+    padding-top: 58px;
+  }
+  .modalHeadingMain {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.15px;
+    color: #001626;
+    margin-bottom: 9px;
+  }
+  .modalParaMain {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.1px;
+    color: #6f87a0;
+    margin-bottom: 25px;
+  }
+  .modalLabel {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #2d4c66;
+  }
+  .modalInput {
+    padding: 8px 16px;
+    background: #f5f6f9;
+    border: 1px solid #baccdd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    font-weight: 500;
+  }
+  .modalInput:focus {
+    padding: 8px 16px;
+    background: #f5f6f9;
+    border: 1px solid #baccdd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+  }
+  .modalInput::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #baccdd;
+  }
+  .modalButtonDiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 36px;
+  }
+  .mobileModalDiv {
+    display: none;
+  }
+  .mobileModalDivH {
+    display: none;
+  }
+  .modalCancelButton {
+    width: 86px;
+    height: 40px;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #26c6da;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #26c6da;
+  }
+  .modalCancelButton:hover .modalCancelButton:active {
+    width: 86px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #26c6da;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #26c6da;
+  }
+  .modalSaveButton {
+    width: 67px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #26c6da;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+  }
+  .modalSaveButton:hover .modalSaveButton:active {
+    border: none;
+    width: 67px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #26c6da;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+  .modalDisabledButton {
+    width: 67px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #bdbdbd;
+    border: none;
+    outline: none;
+  }
+  .modalDisabledButton:hover .modalDisabledButton:active {
+    width: 67px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #bdbdbd;
+    border: none;
+  }
+  
+  .pendingProjectSection {
+    margin-top: 42px;
+  }
+  .pendingProjectDiv {
+    background: #ffffff;
+    border: 1px solid #daeced;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 19px 14px 24px 25px;
+  }
+  .pendingProjectHeading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #2d4c66;
+    margin-bottom: 7px;
+  }
+  .pendingProjectPara {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #6f87a0;
+    margin-bottom: 20px;
+  }
+  .pendingProjectInfo {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #26c6da;
+  }
+  .pendingProjectDivLeft {
+    padding-right: 33px;
+    border-right: 1px solid #baccdd;
+  }
+  .pendingProjectDivRight {
+    padding-left: 20px;
+    align-items: center;
+    display: flex;
+  }
+  .buttonAccept {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    align-items: center;
+    padding: 9px 12px;
+    background: #26c6da;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    height: 32px;
+  }
+  .buttonReject {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: #26c6da;
+    margin-right: 12px;
+    border: 1px solid #26c6da;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    padding: 9px 12px;
+    background: white;
+    outline: none;
+    height: 32px;
+  }
+  
+  @media (max-width: 800px) {
+    .Container {
+      padding-left: 24px;
+      padding-right: 26px;
+      padding-top: 23px;
+    }
+    .mobileModalDiv {
+      width: 100vw;
+      height: 56px;
+      background: #2d4c66;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.15px;
+      color: #ffffff;
+      padding: 17px auto 16px 21px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+    .sortButtonCaretSm {
+      display: inline-block;
+    }
+    .mobileModalDivH {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.15px;
+      color: #ffffff;
+      margin-top: 17px;
+      padding-left: 21px;
+      display: block;
+    }
+    .paraMain {
+      display: none;
+    }
+    .industryModal {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    .modalBodyDesktop {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      height: 100vh;
+      width: 100vw;
+      padding-top: 70px;
+      border: none;
+    }
+    .modalButtonDiv {
+      position: absolute;
+      bottom: 30px;
+      justify-content: flex-start;
+    }
+    .modalCancelButton {
+      width: 42vw;
+    }
+    .modalSaveButton {
+      width: 42vw;
+    }
+    .modalDisabledButton {
+      width: 42vw;
+    }
+    .modalBodyScrollable {
+      height: auto;
+      max-height: 60vh;
+      padding-right: 5px;
+      overflow-y: auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .headingMain {
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.15px;
+    }
+    .searchInput {
+      width: 87vw;
+    }
+    .filterSortDiv {
+      justify-content: flex-start;
+      margin-top: 9px;
+      margin-bottom: 20px;
+    }
+    .filterByDiv {
+      width: 42vw;
+      margin-left: 0;
+    }
+    .filterByDiv ul {
+      left: 0;
+    }
+    .sortByDiv {
+      margin-right: 0;
+      width: 42vw;
+    }
+    .pendingProjectSection {
+      margin-top: 20px;
+    }
+    .pendingProjectDiv {
+      padding: 17px 13px;
+    }
+    .pendingProjectDivRight {
+      padding-left: 13px;
+      margin-top: 24px;
+    }
+    .pendingProjectDivLeft {
+      padding-right: 0;
+      border: none;
+    }
+    .buttonAccept {
+      width: 42vw;
+    }
+    .buttonReject {
+      width: 42vw;
+    }
+    .buttonAdd {
+      padding: 0;
+    }
+  }
+  
+  /*---- Custom Checkbox ----*/
+  /* The container */
+  .containerCheckbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: translateY(-13px);
+  }
+  
+  /* Hide the browser's default checkbox */
+  .containerCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border-radius: 2px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerCheckbox:hover input ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  .containerCheckbox input:disabled ~ .checkmark {
+    background-color: #a7abaa;
+    cursor: not-allowed;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .containerCheckbox input:checked ~ .checkmark {
+    background-color: #26c6da;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .containerCheckbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .containerCheckbox .checkmark:after {
+    left: 4px;
+    top: 1.5px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
